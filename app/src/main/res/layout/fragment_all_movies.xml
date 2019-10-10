@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+    android:id="@+id/swipeAll"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/view"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/activity_main"
+    android:layout_marginTop="@dimen/vertical_margin">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <HorizontalScrollView
+            android:id="@+id/scroll_g"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none"
+            android:background="@color/colorPrimary"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:visibility="gone">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/All"
+                    android:text="All"
+                    android:padding="10dp"
+                    android:layout_margin="5dp"
+                    android:textStyle="bold"
+                    android:textColor="#fff"
+                    android:background="@drawable/round_main"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/Action"
+                    android:text="Action"
+                    android:padding="10dp"
+                    android:layout_margin="5dp"
+                    android:textStyle="bold"
+                    android:textColor="#fff"
+                    android:background="@drawable/round_main"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/Adventure"
+                    android:text="Adventure"
+                    android:padding="10dp"
+                    android:layout_margin="5dp"
+                    android:textStyle="bold"
+                    android:textColor="#fff"
+                    android:background="@drawable/round_main"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/Animation"
+                    android:text="Animation"
+                    android:padding="10dp"
+                    android:layout_margin="5dp"
+                    android:textStyle="bold"
+                    android:textColor="#fff"
+                    android:background="@drawable/round_main"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/Comedy"
+                    android:text="Comedy"
+                    android:padding="10dp"
+                    android:layout_margin="5dp"
+                    android:textStyle="bold"
+                    android:textColor="#fff"
+                    android:background="@drawable/round_main"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/Crime"
+                    android:text="Crime"
+                    android:padding="10dp"
+                    android:layout_margin="5dp"
+                    android:textStyle="bold"
+                    android:textColor="#fff"
+                    android:background="@drawable/round_main"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/Drama"
+                    android:text="Drama"
+                    android:padding="10dp"
+                    android:layout_margin="5dp"
+                    android:textStyle="bold"
+                    android:textColor="#fff"
+                    android:background="@drawable/round_main"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/Family"
+                    android:text="Family"
+                    android:padding="10dp"
+                    android:layout_margin="5dp"
+                    android:textStyle="bold"
+                    android:textColor="#fff"
+                    android:background="@drawable/round_main"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/Fantasy"
+                    android:text="Fantasy"
+                    android:padding="10dp"
+                    android:layout_margin="5dp"
+                    android:textStyle="bold"
+                    android:textColor="#fff"
+                    android:background="@drawable/round_main"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/History"
+                    android:text="History"
+                    android:padding="10dp"
+                    android:layout_margin="5dp"
+                    android:textStyle="bold"
+                    android:textColor="#fff"
+                    android:background="@drawable/round_main"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/Horror"
+                    android:text="Horror"
+                    android:padding="10dp"
+                    android:layout_margin="5dp"
+                    android:textStyle="bold"
+                    android:textColor="#fff"
+                    android:background="@drawable/round_main"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/Mystery"
+                    android:text="Mystery"
+                    android:padding="10dp"
+                    android:layout_margin="5dp"
+                    android:textStyle="bold"
+                    android:textColor="#fff"
+                    android:background="@drawable/round_main"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/Romance"
+                    android:text="Romance"
+                    android:padding="10dp"
+                    android:layout_margin="5dp"
+                    android:textStyle="bold"
+                    android:textColor="#fff"
+                    android:background="@drawable/round_main"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/ScienceFiction"
+                    android:text="Science Fiction"
+                    android:padding="10dp"
+                    android:layout_margin="5dp"
+                    android:textStyle="bold"
+                    android:textColor="#fff"
+                    android:background="@drawable/round_main"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/Thriller"
+                    android:text="Thriller"
+                    android:padding="10dp"
+                    android:layout_margin="5dp"
+                    android:textStyle="bold"
+                    android:textColor="#fff"
+                    android:background="@drawable/round_main"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/War"
+                    android:text="War"
+                    android:padding="10dp"
+                    android:layout_margin="5dp"
+                    android:textStyle="bold"
+                    android:textColor="#fff"
+                    android:background="@drawable/round_main"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/Western"
+                    android:text="Western"
+                    android:padding="10dp"
+                    android:layout_margin="5dp"
+                    android:textStyle="bold"
+                    android:textColor="#fff"
+                    android:background="@drawable/round_main"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+        </LinearLayout>
+</HorizontalScrollView>
+
+<ProgressBar
+            android:id="@+id/alMoviesProgress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="200dp"
+            android:visibility="gone"
+            android:layout_gravity="center"
+            />
+
+        <TextView
+            android:id="@+id/allMoviesTxt"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textAlignment="center"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:paddingTop="200dp"
+            android:visibility="gone"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clipToPadding="false"
+            android:scrollbars="vertical"
+            android:visibility="gone"
+            >
+        </androidx.recyclerview.widget.RecyclerView>
+    </LinearLayout>
+
+
+
+</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>

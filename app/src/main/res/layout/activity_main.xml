@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        android:layout_gravity="top">
+
+        <FrameLayout
+            android:id="@+id/toolbar_container"
+            android:layout_width="match_parent"
+            app:layout_scrollFlags="snap|enterAlways|scroll"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:title="@string/app_name" />
+
+            <!--<com.github.glomadrian.materialanimatedswitch.MaterialAnimatedSwitch-->
+                <!--android:id="@+id/pin"-->
+                <!--android:layout_gravity="center"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--app:base_press_color="@color/active"-->
+                <!--app:base_release_color="@color/blue"-->
+                <!--app:ball_press_color="@color/white"-->
+                <!--app:ball_release_color="@color/white"-->
+                <!--app:icon_release="@drawable/movie"-->
+                <!--app:icon_press="@drawable/tv"-->
+                <!--/>-->
+
+            <!--<com.ferfalk.simplesearchview.SimpleSearchView-->
+                <!--android:id="@+id/searchView"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:background="@color/colorPrimary" />-->
+
+        </FrameLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+        <FrameLayout
+            android:id="@+id/frameContainer"
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/navigation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            app:itemIconTint="@drawable/selector"
+            app:itemTextColor="@drawable/selector"
+            app:itemRippleColor="@color/colorPrimary"
+            app:menu="@menu/navigation"
+            app:layout_behavior="@string/hide_bottom_view_on_scroll_behavior"
+            android:layout_gravity="bottom">
+        </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
